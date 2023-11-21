@@ -14,5 +14,4 @@ namespace P2MABB.Shared
             public int ClienteId { get; set; }
             public required string Nombres { get; set; }
         }
-    
 }
