@@ -12,9 +12,6 @@ namespace P2MABB.Shared
         {
             [Key]
             public int ClienteId { get; set; }
-            [Required(ErrorMessage = "Debe ingresar el nombre")]
-            [MinLength(2, ErrorMessage = "El nombre debe tener al menos 2 caracteres")]
-            [RegularExpression(@"^[a-zA-ZáéíóúüÁÉÍÓÚÜ\s]+$", ErrorMessage = "Solo se permiten letras y espacios")]
-             public string? Nombres { get; set; }
-    }
+            public required string Nombres { get; set; }
+        }
 }
