@@ -9,7 +9,7 @@ using P2MABB.Server.DAL;
 
 namespace P2MABB.Server.Migrations
 {
-    [DbContext(typeof(VentasContext))]
+    [DbContext(typeof(Context))]
     partial class VentasContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

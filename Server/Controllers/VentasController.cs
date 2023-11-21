@@ -14,9 +14,9 @@ namespace P2MABB.Server.Controllers
     [ApiController]
     public class VentasController : ControllerBase
     {
-        private readonly VentasContext _context;
+        private readonly Context _context;
 
-        public VentasController(VentasContext context)
+        public VentasController(Context context)
         {
             _context = context;
         }
