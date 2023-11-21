@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
+using P2MABB.Server.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
