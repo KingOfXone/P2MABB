@@ -11,10 +11,12 @@ namespace P2MABB.Shared
         {
             [Key]
             public int VentaId { get; set; }
-            public DateTime Fecha { get; set; }
+            public DateTime Fecha { get; set; } = DateTime.Now;
             public int ClienteId { get; set; }
             public double Monto { get; set; }
             public double Balance { get; set; }
+
+                public ICollection<VentasDetalles> ventasDetalles { get; set; } = new List<VentasDetalles>();
         }
     
 }
